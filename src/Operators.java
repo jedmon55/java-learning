@@ -29,21 +29,21 @@ public class Operators {
 		  System.out.println(x);        //outputs 18
 		                                //decrement by 1
 		  x--;                           // decrease by 1
-		  System.out.println(x);        //outputs 16
+		  System.out.println(x);        //outputs 17
 		  
 		                                //Comparison Operators ==, !=, > , <, >=, <=
 		  System.out.println(x); 
 		  System.out.println(x<y);        //outputs true
 		  System.out.println(x<y && y<z); //outputs true 
-		  System.out.println(x);
-		  System.out.println(y);
-		  System.out.println(z);
+		  System.out.println(x);          //outputs 17
+		  System.out.println(y);          //outputs 20
+		  System.out.println(z);          //outputs 30
 		  
-		  y = 2;                          //
+		  y = 2;                          //set y to 2
 		  System.out.println(x<y || y<z);
 		  x = 70;
 		  y = 50;
-		  System.out.println(x<y || y<z);	  
+		  System.out.println(x<y || y<z);  //70<2 50 or 50<30 which is false
 		  
 	}
 
