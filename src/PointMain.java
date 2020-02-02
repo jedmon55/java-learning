@@ -4,6 +4,7 @@ public class PointMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
                                              // create two point objects
+		                                     // I believe this is a client program that is instantiating the point object twice
 		Point p1 = new Point ();             // really do not know what point is doing
 		p1.x = 7;
 		p1.y = 2;
