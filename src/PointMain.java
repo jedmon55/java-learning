@@ -1,28 +1,39 @@
 
 public class PointMain {
+	/* this program demonstrates the technique of object oriented programming vs. procedural programming.
+	It is a "main" program that calls a class Point that contains methods and data. It attempts to demonstrate the concept of 
+	a coding technique puts data and methods in the same class so that calling pgms only need to understand the "contract" with the class and don
+	need to understand the internal workings of the class. */
+	 
+	
+	
+    
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
                                              // create two point objects
 		                                     // I believe this is a client program that is instantiating the point object twice
-		Point p1 = new Point ();             // really do not know what point is doing
+		Point p1 = new Point ();             // instantiate the object Point first time
 		p1.x = 7;
 		p1.y = 2;
 		
-		Point p2 = new Point();
+		Point p2 = new Point();            // instantiate the object Point second time
 		p2.x = 4;
 		p2.y = 3;
 		
+		Point p3 = new Point ();           // instantiate the object Point third time and
+		                                   // do not initialize variable - it is already initialized to 0.
 		                                   // print each point and its distance from the origin
 		
 		System.out.println ("p1 is (" + p1.x + ", " + p1.y + ")");
 		double dist1 = Math.sqrt(p1.x * p1.x + p1.y * p1.y);   // what is the purpose of sqrt?
-		System.out.println("distance from origin = " + dist1); 
+		System.out.println("distance from origin = " + dist1); // what was the coordinates of origin?
+		System.out.println("\n");
 		
 		System.out.println ("p2 is (" + p2.x + ", " + p2.y + ")");
 		double dist2 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
 		System.out.println("distance from origin = " + dist2); 
-		
+		System.out.println("\n");
 		System.out.println();
 		
 		                                    //translate each point to a new location
@@ -35,6 +46,27 @@ public class PointMain {
 		
 		System.out.println ("p1 is (" + p1.x + ", " + p1.y + ")");
 		System.out.println ("p2 is (" + p2.x + ", " + p2.y + ")");
+		
+		p3.translate(10, 12); // calling a translate static method in Point
+		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
+		System.out.println("\n");
+		  
+		
+		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
+		double dist3 = Math.sqrt(p3.x * p3.x + p3.y * p3.y);
+		System.out.println("distance from origin = " + dist3); 
+		System.out.println("\n");
+		
+	    
+
+        // this code demonstrates parameter passing to methods
+		
+       /* System.out.println(myMethod(3));
+        System.out.println("\n");
+        // Outputs 8 (5 + 3)
+	
+		
+		*/
 		
 	}
 
