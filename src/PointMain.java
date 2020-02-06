@@ -52,12 +52,15 @@ public class PointMain {
 		System.out.println("\n");
 		  
 		
+		/* the below code is commented out because this method was placed into the Point object
 		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
 		double dist3 = Math.sqrt(p3.x * p3.x + p3.y * p3.y);
 		System.out.println("distance from origin = " + dist3); 
 		System.out.println("\n");
-		
+		*/
 	    
+		
+		System.out.println("distance from origin = " + p3.distanceFromOrigin()); 
 
         // this code demonstrates parameter passing to methods
 		

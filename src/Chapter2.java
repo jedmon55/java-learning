@@ -62,8 +62,9 @@ public class Chapter2 {
     	System.out.println(isquarred + " squarred = " + (isquarred*isquarred));
     	System.out.println("\n");
     }
-		
-		
+// Use nested loops to draw a V text figure
+    
+			
 		
 	}
 

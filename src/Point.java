@@ -26,7 +26,9 @@ public class Point {
     	y =+ dy;
     }
 	
-	
+	public double distanceFromOrigin() {
+		return Math.sqrt(x*x + y*y);
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
