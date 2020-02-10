@@ -1,7 +1,8 @@
 
 public class C3DrawConeParameter {
 
-	public static final int SUB_HEIGHT = 4;
+	public static final int SUB_HEIGHT = 50
+			;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
