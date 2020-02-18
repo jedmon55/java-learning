@@ -22,9 +22,7 @@ public class PointMain {
 		p2.x = 4;
 		p2.y = 3;
 		
-		Point p3 = new Point ();           // instantiate the object Point third time and
-		                                   // do not initialize variable - it is already initialized to 0.
-		                                   // print each point and its distance from the origin
+		
 		
 		System.out.println ("p1 is (" + p1.x + ", " + p1.y + ")");
 		double dist1 = Math.sqrt(p1.x * p1.x + p1.y * p1.y);   // what is the purpose of sqrt?
@@ -57,8 +55,11 @@ public class PointMain {
 		System.out.println("\n");
 		System.out.println();
 		
-		                            // calling a translate static method in Point
-		                            // this probably translates from (0,0) since p3 never set
+		                                   // calling a translate static method in Point
+		                                   // this probably translates from (0,0) since p3 never set
+		Point p3 = new Point ();           // instantiate the object Point third time and
+                                           // do not initialize variable - it is already initialized to 0.
+                                           // print each point and its distance from the origin
 		p3.translate(10, 12);       
 		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
 		double dist3 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
@@ -77,7 +78,14 @@ public class PointMain {
 		System.out.println("\n");
 		System.out.println();
 		
+		                                     // this example demos using method on Point class to calc distance
+		                                     // it is better to put the methof with the data rather than in every calling pgm
 		
+		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
+		System.out.println("distance from origin = " + p3.distanceFromOrigin()); 
+	
+		
+		Point p4 = new Point ();
 		
 	}
 
