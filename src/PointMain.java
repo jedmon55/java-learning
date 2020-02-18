@@ -13,6 +13,7 @@ public class PointMain {
 		// TODO Auto-generated method stub
                                              // create two point objects
 		                                     // I believe this is a client program that is instantiating the point object twice
+		
 		Point p1 = new Point ();             // instantiate the object Point first time
 		p1.x = 7;
 		p1.y = 2;
@@ -36,40 +37,47 @@ public class PointMain {
 		System.out.println("\n");
 		System.out.println();
 		
-		                                    //translate each point to a new location
+		                            //translate each point to a new location without calling the 
+		                            // Point class
 		p1.x +=11;
 		p1.y += 6;
 		p2.x += 1;
 		p2.y += 7;
 		
-		                                   // print points again
+		                            // print points again after resetting coordinates
 		
 		System.out.println ("p1 is (" + p1.x + ", " + p1.y + ")");
-		System.out.println ("p2 is (" + p2.x + ", " + p2.y + ")");
-		
-		p3.translate(10, 12); // calling a translate static method in Point
-		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
+		dist1 = Math.sqrt(p1.x * p1.x + p1.y * p1.y);   
+		System.out.println("distance from origin = " + dist1); 
 		System.out.println("\n");
-		  
 		
-		/* the below code is commented out because this method was placed into the Point object
+		System.out.println ("p2 is (" + p2.x + ", " + p2.y + ")");
+		dist2 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
+		System.out.println("distance from origin = " + dist2); 
+		System.out.println("\n");
+		System.out.println();
+		
+		                            // calling a translate static method in Point
+		                            // this probably translates from (0,0) since p3 never set
+		p3.translate(10, 12);       
 		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
-		double dist3 = Math.sqrt(p3.x * p3.x + p3.y * p3.y);
+		double dist3 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
 		System.out.println("distance from origin = " + dist3); 
 		System.out.println("\n");
-		*/
-	    
-		
-		System.out.println("distance from origin = " + p3.distanceFromOrigin()); 
-
-        // this code demonstrates parameter passing to methods
-		
-       /* System.out.println(myMethod(3));
-        System.out.println("\n");
-        // Outputs 8 (5 + 3)
+		System.out.println();
 	
+		   
+		                            // set p3 to (2,2) and recalc and print
 		
-		*/
+		
+		p3.translate(-1, -1);       
+		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
+		dist3 = Math.sqrt(p3.x * p3.x + p3.y * p3.y);
+		System.out.println("distance from origin = " + dist3); 
+		System.out.println("\n");
+		System.out.println();
+		
+		
 		
 	}
 

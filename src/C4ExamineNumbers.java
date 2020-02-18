@@ -22,6 +22,7 @@ public class C4ExamineNumbers {
 	
 	
 	double sum = 0.0; // why a double?
+
 	for (int i = 1; i <= totalNumber; i++) {
 		System.out.println("     #" + i + "?" ); // can I use escape sequences to get curor in tight spot
 		double next = console.nextDouble();
