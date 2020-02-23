@@ -14,43 +14,39 @@ public class PointMain {
                                              // create two point objects
 		                                     // I believe this is a client program that is instantiating the point object twice
 		
-		Point p1 = new Point ();             // instantiate the object Point first time
-		p1.x = 7;
-		p1.y = 2;
+		Point p1 = new Point (7, 2);             // instantiate the object Point first time
+
 		
-		Point p2 = new Point();            // instantiate the object Point second time
-		p2.x = 4;
-		p2.y = 3;
+		Point p2 = new Point(4, 3);            // instantiate the object Point second time
 		
 		
 		
-		System.out.println ("p1 is (" + p1.x + ", " + p1.y + ")");
-		double dist1 = Math.sqrt(p1.x * p1.x + p1.y * p1.y);   // what is the purpose of sqrt?
+		System.out.println ("p1 is (" + p1.getX() + ", " + p1.getY() + ")");
+		double dist1 = Math.sqrt(p1.getX() * p1.getX() + p1.getY() * p1.getY());   // what is the purpose of sqrt?
 		System.out.println("distance from origin = " + dist1); // what was the coordinates of origin?
 		System.out.println("\n");
 		
-		System.out.println ("p2 is (" + p2.x + ", " + p2.y + ")");
-		double dist2 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
+		System.out.println ("p2 is (" + p2.getX() + ", " + p2.getY() + ")");
+		double dist2 = Math.sqrt(p2.getX() * p2.getX() + p2.getY() * p2.getY());
 		System.out.println("distance from origin = " + dist2); 
 		System.out.println("\n");
 		System.out.println();
 		
 		                            //translate each point to a new location without calling the 
 		                            // Point class
-		p1.x +=11;
-		p1.y += 6;
-		p2.x += 1;
-		p2.y += 7;
+		p1.translate(11, 6);
+		p2.translate(1, 7);
+		
 		
 		                            // print points again after resetting coordinates
 		
-		System.out.println ("p1 is (" + p1.x + ", " + p1.y + ")");
-		dist1 = Math.sqrt(p1.x * p1.x + p1.y * p1.y);   
+		System.out.println ("p1 is (" + p1.getX() + ", " + p1.getY() + ")");
+		dist1 = Math.sqrt(p1.getX() * p1.getX() + p1.getY() * p1.getY());   
 		System.out.println("distance from origin = " + dist1); 
 		System.out.println("\n");
 		
-		System.out.println ("p2 is (" + p2.x + ", " + p2.y + ")");
-		dist2 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
+		System.out.println ("p2 is (" + p2.getX() + ", " + p2.getY() + ")");
+		dist2 = Math.sqrt(p2.getX() * p2.getX() + p2.getY() * p2.getY());
 		System.out.println("distance from origin = " + dist2); 
 		System.out.println("\n");
 		System.out.println();
@@ -61,8 +57,8 @@ public class PointMain {
                                            // do not initialize variable - it is already initialized to 0.
                                            // print each point and its distance from the origin
 		p3.translate(10, 12);       
-		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
-		double dist3 = Math.sqrt(p2.x * p2.x + p2.y * p2.y);
+		System.out.println ("p3 is (" + p3.getX() + ", " + p3.getY() + ")");
+		double dist3 = Math.sqrt(p2.getX() * p2.getX() + p2.getY() * p2.getY());
 		System.out.println("distance from origin = " + dist3); 
 		System.out.println("\n");
 		System.out.println();
@@ -72,8 +68,8 @@ public class PointMain {
 		
 		
 		p3.translate(-1, -1);       
-		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
-		dist3 = Math.sqrt(p3.x * p3.x + p3.y * p3.y);
+		System.out.println ("p3 is (" + p3.getX() + ", " + p3.getY() + ")");
+		dist3 = Math.sqrt(p3.getX() * p3.getX() + p3.getY() * p3.getY());
 		System.out.println("distance from origin = " + dist3); 
 		System.out.println("\n");
 		System.out.println();
@@ -81,7 +77,7 @@ public class PointMain {
 		                                     // this example demos using method on Point class to calc distance
 		                                     // it is better to put the methof with the data rather than in every calling pgm
 		
-		System.out.println ("p3 is (" + p3.x + ", " + p3.y + ")");
+		System.out.println ("p3 is (" + p3.getX() + ", " + p3.getY() + ")");
 		System.out.println("distance from origin = " + p3.distanceFromOrigin()); 
 	
 		
